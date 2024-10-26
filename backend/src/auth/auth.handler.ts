@@ -53,7 +53,7 @@ export async function loginUser(req: Request, res: Response, next: NextFunction)
 
     // Check if password hash match
     if (!(await bcrypt.compare(validated.password, dbUser[0].password))) {
-      return res.json({ success: false, message: "Invalid Password/Password" });
+      return res.json({ success: false, message: "Invalid Email/Password" });
     }
 
     // Create a jwt token
