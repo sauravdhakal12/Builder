@@ -19,7 +19,7 @@ export function AdminCookieHeader() {
       const rootPath = path.split("/")[1];
       if (rootPath === "admin") {
         router.push("/admin");
-      }else {
+      } else {
         router.refresh();
       }
     }
@@ -52,7 +52,7 @@ export function AdminCookieHeader() {
 export function NonAdminCookieHeader() {
   return (
     <div>
-      <Link href="/" className="mr-4 self-end bg-white text-black font-[700] px-4 py-2 rounded-md text-sm hover:bg-[#aaaaaa] duration-300 ease-in-out"  >Join the Community</Link>
+      <Link href="https://discord.com/invite/HNhfAugqjb" className="mr-4 self-end bg-white text-black font-[700] px-4 py-2 rounded-md text-sm hover:bg-[#aaaaaa] duration-300 ease-in-out"  >Join the Community</Link>
     </div>
   )
 }
